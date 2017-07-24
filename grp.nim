@@ -8,9 +8,7 @@ import strutils
 
 
 type
-    Grp* = ref GrpInternal
-    
-    GrpInternal* = object
+    Grp* = ref object
         gr_name : string
         gr_passwd : string
         gr_gid : int
